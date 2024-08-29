@@ -19,7 +19,7 @@ public:
         ListNode *even = head->next;
         ListNode *estart = head->next;
 
-        while(even && even->next) {
+        while(even && even->next and (odd && odd->next)) {
             odd -> next = odd->next->next;
             even ->next = even->next->next;
 
